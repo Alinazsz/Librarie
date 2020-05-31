@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Create new book</title>
+</head>
+<body>
+<div align="center">
+	<h1>Proiect daw</h1>
+	<br/>
+	<form action="#" th:action="@{/save}" th:object="${books}" method="post">
+	
+	<table border="0" cellpadding="10">
+		<tr>
+			<td>NumeCarte:</td>
+			<td><input type="text" th:field="*{NumeCarte}" /></td>
+		</tr>
+		<tr>
+			<td>NumeAutor:</td>
+			<td><input type="text" th:field="*{NumeAutor}" /></td>
+		</tr>
+		<tr>
+			<td>Editura:</td>
+			<td><input type="text" th:field="*{Editura}" /></td>
+		</tr>
+		<tr>
+			<td>Pret:</td>
+			<td><input type="text" th:field="*{Pret}" /></td>
+		</tr>
+		<tr>
+			<td colspan="2"><button type="submit">Salveaza</button></td>
+		
+		</tr>
+	</table>
+	</form>
+</div>
+</body>
+</html>
